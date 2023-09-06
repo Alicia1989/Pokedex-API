@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+}
+
+.main {
+  background: linear-gradient(to bottom, #6ab7f5, #fff);
+  display: flex;
+  height: 100vh;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+}
+
+.pokedex {
+  width: 400px;
+}
+
+.pok {
+  width: 380px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.pokemon-evolutions {
+  width: 80%;
+  margin: 9.8%;
+  display: flex;
+  z-index: 2;
+  margin-top: 265px;
+  position: absolute;
+  justify-content: space-between;
+}
+
+.evolution-box {
+  width: 32%;
+  text-align: center;
+  border-radius: 4px;
+  padding-bottom: 10px;
+  background-color: #8ec63e;
+  border: 2px solid #4a4e43;
+}
+.evolution-box img {
+  margin-bottom: -10px;
+  width: 80px !important;
+  height: 90px !important;
+}
+
+.pokemon-image {
+  height: 120px;
+  margin-top: 150px;
+  position: absolute;
+  margin-left: 200px;
+  transform: translate(-63%, 20%);
+}
+
+.power {
+  top: 11px;
+  left: 36px;
+  z-index: 2;
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.pokemon-data {
+  position: absolute;
+  display: flex;
+  font-weight: 600;
+  color: #0e0f0f;
+  top: 54.5%;
+  right: 27%;
+  font-size: 25px;
+}
+
+.pokemon-info {
+  position: absolute;
+  font-weight: 600;
+  color: #0e0f0f;
+  top: 120px;
+  z-index: 2;
+  left: 50px;
+  font-size: 20px;
+}
+
+.pokemon-name,
+.pokemon-number,
+.pokemon-height,
+.pokemon-weight,
+.pokemon-type {
+  margin: 0 5px;
+  font-size: 25px;
+  color: #0e0f0f;
+  text-transform: capitalize;
+}
+
+.form {
+  position: absolute;
+  width: 65%;
+  top: 65%;
+  left: 13.5%;
+}
+
+.input-search {
+  width: 100%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #3a444d;
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 65%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  width: 50%;
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active {
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.pokemon-types {
+  z-index: 2;
+  display: flex;
+  position: relative;
+}

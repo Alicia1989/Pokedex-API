@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Pokedex</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <h1>Pokemon</h1>
+
+      <div class="row">
+        <!--first device template-->
+        <div class="box">
+          <img src="#" alt="pokemon" class="pokemon-image" />
+          <div class="pokemon-data">
+            <p class="pokemon-number"></p>
+            -
+            <p class="pokemon-name"></p>
+          </div>
+          <form class="form">
+            <input
+              type="search"
+              class="input-search"
+              placeholder="Type name or number"
+              required
+            />
+          </form>
+          <div class="buttons">
+            <button class="button btn-prev">&lt; Prev</button>
+            <button class="button btn-next">Next &gt;</button>
+          </div>
+
+          <img src="./images/pokedex.png" alt="pokedex" class="pokedex" />
+        </div>
+
+        <!-- second device template  -->
+        <div class="box">
+          <div class="pokemon-info">
+            <div class="row">
+              <p>Height -</p>
+              <p class="pokemon-height"></p>
+            </div>
+            <div class="row">
+              <p>Weight -</p>
+              <p class="pokemon-weight"></p>
+            </div>
+            <div class="row">
+              <p>Types:</p>
+              <div class="pokemon-types"></div>
+            </div>
+          </div>
+          <div class="pokemon-evolutions"></div>
+
+          <img src="./images/pok.jpg" alt="pokedex" class="pok" />
+
+          <img src="./images/on.png" alt="power-on" class="power" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
